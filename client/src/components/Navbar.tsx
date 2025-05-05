@@ -20,12 +20,12 @@ const Navbar = () => {
   };
 
   return (
-    <header className={`sticky top-0 bg-white z-50 transition-shadow duration-300 ${isScrolled ? "shadow-md" : "shadow-sm"}`}>
+    <header className={`sticky top-0 bg-green-500 z-50 transition-shadow duration-300 ${isScrolled ? "shadow-md" : "shadow-sm"}`}>
       <nav className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0">
-            <ScrollLink href="#home" className="text-xl font-bold text-primary">
-              John<span className="text-secondary">Doe</span>
+            <ScrollLink href="#home" className="text-xl font-bold text-white">
+              John<span className="text-gray-200">Doe</span>
             </ScrollLink>
           </div>
           
@@ -34,31 +34,31 @@ const Navbar = () => {
             <div className="ml-10 flex items-center space-x-8">
               <ScrollLink 
                 href="#home" 
-                className="nav-link text-primary hover:text-secondary px-2 py-1 text-sm font-medium relative after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[2px] after:bg-secondary after:transition-[width] after:duration-300 hover:after:w-full"
+                className="nav-link text-white hover:text-gray-200 px-2 py-1 text-sm font-medium relative after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[2px] after:bg-white after:transition-[width] after:duration-300 hover:after:w-full"
               >
                 Home
               </ScrollLink>
               <ScrollLink 
                 href="#about" 
-                className="nav-link text-primary hover:text-secondary px-2 py-1 text-sm font-medium relative after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[2px] after:bg-secondary after:transition-[width] after:duration-300 hover:after:w-full"
+                className="nav-link text-white hover:text-gray-200 px-2 py-1 text-sm font-medium relative after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[2px] after:bg-white after:transition-[width] after:duration-300 hover:after:w-full"
               >
                 About
               </ScrollLink>
               <ScrollLink 
                 href="#skills" 
-                className="nav-link text-primary hover:text-secondary px-2 py-1 text-sm font-medium relative after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[2px] after:bg-secondary after:transition-[width] after:duration-300 hover:after:w-full"
+                className="nav-link text-white hover:text-gray-200 px-2 py-1 text-sm font-medium relative after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[2px] after:bg-white after:transition-[width] after:duration-300 hover:after:w-full"
               >
                 Skills
               </ScrollLink>
               <ScrollLink 
                 href="#projects" 
-                className="nav-link text-primary hover:text-secondary px-2 py-1 text-sm font-medium relative after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[2px] after:bg-secondary after:transition-[width] after:duration-300 hover:after:w-full"
+                className="nav-link text-white hover:text-gray-200 px-2 py-1 text-sm font-medium relative after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[2px] after:bg-white after:transition-[width] after:duration-300 hover:after:w-full"
               >
                 Projects
               </ScrollLink>
               <ScrollLink 
                 href="#contact" 
-                className="nav-link text-primary hover:text-secondary px-2 py-1 text-sm font-medium relative after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[2px] after:bg-secondary after:transition-[width] after:duration-300 hover:after:w-full"
+                className="nav-link text-white hover:text-gray-200 px-2 py-1 text-sm font-medium relative after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[2px] after:bg-white after:transition-[width] after:duration-300 hover:after:w-full"
               >
                 Contact
               </ScrollLink>
@@ -69,7 +69,7 @@ const Navbar = () => {
           <div className="md:hidden">
             <button 
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)} 
-              className="text-primary hover:text-secondary focus:outline-none"
+              className="text-white hover:text-gray-200 focus:outline-none"
             >
               {mobileMenuOpen ? (
                 <X className="h-6 w-6" />
@@ -86,35 +86,35 @@ const Navbar = () => {
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
               <ScrollLink 
                 href="#home" 
-                className="block text-primary hover:text-secondary px-3 py-2 rounded-md text-base font-medium"
+                className="block text-white hover:text-gray-200 px-3 py-2 rounded-md text-base font-medium"
                 onClick={closeMobileMenu}
               >
                 Home
               </ScrollLink>
               <ScrollLink 
                 href="#about" 
-                className="block text-primary hover:text-secondary px-3 py-2 rounded-md text-base font-medium"
+                className="block text-white hover:text-gray-200 px-3 py-2 rounded-md text-base font-medium"
                 onClick={closeMobileMenu}
               >
                 About
               </ScrollLink>
               <ScrollLink 
                 href="#skills" 
-                className="block text-primary hover:text-secondary px-3 py-2 rounded-md text-base font-medium"
+                className="block text-white hover:text-gray-200 px-3 py-2 rounded-md text-base font-medium"
                 onClick={closeMobileMenu}
               >
                 Skills
               </ScrollLink>
               <ScrollLink 
                 href="#projects" 
-                className="block text-primary hover:text-secondary px-3 py-2 rounded-md text-base font-medium"
+                className="block text-white hover:text-gray-200 px-3 py-2 rounded-md text-base font-medium"
                 onClick={closeMobileMenu}
               >
                 Projects
               </ScrollLink>
               <ScrollLink 
                 href="#contact" 
-                className="block text-primary hover:text-secondary px-3 py-2 rounded-md text-base font-medium"
+                className="block text-white hover:text-gray-200 px-3 py-2 rounded-md text-base font-medium"
                 onClick={closeMobileMenu}
               >
                 Contact
